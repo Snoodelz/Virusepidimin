@@ -40,8 +40,9 @@ namespace Virusepidimin
                         immune++;
                 }
                 Console.WriteLine($"Infekterade: {infected}, immuna: {immune}");
-
                 infectPeople(infected);
+
+                Console.ReadLine();
             }
         }
 
@@ -53,7 +54,6 @@ namespace Virusepidimin
                 if (i < healthyPeople.Count)
                     healthyPeople[i].Infected = true;
             }
-            Console.ReadLine();
         }
 
         private static void AddPeople(int amount)

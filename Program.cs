@@ -10,16 +10,24 @@ namespace Virusepidimin
 
         static void Main(string[] args)
         {
-            AddPeople(50);
+            int people = 50;
+            int hoursInfected = 5;
+            StartEpidemic(people, hoursInfected);
+            
+            
+
+        }
+
+        private static void StartEpidemic(int amount, int hoursInfected)
+        {
+            AddPeople(amount);
             while (true)
             {
-                int amount = 0;
                 int infected = 0;
                 int immune = 0;
                 foreach (var person in diskotek)
                 {
-                    amount++;
-                    if (person.HoursInfected >= 5)
+                    if (person.HoursInfected >= hoursInfected)
                     {
                         person.Immune = true;
                         person.Infected = false;
@@ -30,36 +38,31 @@ namespace Virusepidimin
                         infected++;
                         person.HoursInfected++;
                     }
-                        
+
                     if (person.Immune)
                         immune++;
                 }
                 Console.WriteLine($"Infekterade: {infected}, immuna: {immune}");
 
-                bool spreadVirus = false;
-                while (!spreadVirus)
-                {
-                    Random random = new Random();
-                    int number = random.Next(0, diskotek.Count);
-                    if(infected <= 0)
-                    {
-                        spreadVirus = true;
-                    }
-                    else if (!diskotek[number].Infected | !diskotek[number].Immune)
-                    {
-                        diskotek[number].Infected = true;
-                        infected--;
-                    }
-                }
-                Console.ReadLine();
-
+                infectPeople(infected);
             }
 
         }
 
+        private static void infectPeople(int infected)
+        {
+            var healthyPeople = diskotek.Where(x => !x.Infected).ToList();
+            for (int i = 0; i < infected; i++)
+            {
+                if (i < healthyPeople.Count)
+                    healthyPeople[i].Infected = true;
+            }
+            Console.ReadLine();
+        }
+
         private static void AddPeople(int amount)
         {
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < amount; i++)
             {
                 if (i == 0)
                     diskotek.Add(new Person(true, 0));

@@ -1,0 +1,13 @@
+C:\Users\ludwi\source\repos\Virusepidimin\bin\Debug\netcoreapp3.1\Virusepidimin.exe
+C:\Users\ludwi\source\repos\Virusepidimin\bin\Debug\netcoreapp3.1\Virusepidimin.deps.json
+C:\Users\ludwi\source\repos\Virusepidimin\bin\Debug\netcoreapp3.1\Virusepidimin.runtimeconfig.json
+C:\Users\ludwi\source\repos\Virusepidimin\bin\Debug\netcoreapp3.1\Virusepidimin.runtimeconfig.dev.json
+C:\Users\ludwi\source\repos\Virusepidimin\bin\Debug\netcoreapp3.1\Virusepidimin.dll
+C:\Users\ludwi\source\repos\Virusepidimin\bin\Debug\netcoreapp3.1\Virusepidimin.pdb
+C:\Users\ludwi\source\repos\Virusepidimin\obj\Debug\netcoreapp3.1\Virusepidimin.AssemblyInfoInputs.cache
+C:\Users\ludwi\source\repos\Virusepidimin\obj\Debug\netcoreapp3.1\Virusepidimin.AssemblyInfo.cs
+C:\Users\ludwi\source\repos\Virusepidimin\obj\Debug\netcoreapp3.1\Virusepidimin.csproj.CoreCompileInputs.cache
+C:\Users\ludwi\source\repos\Virusepidimin\obj\Debug\netcoreapp3.1\Virusepidimin.dll
+C:\Users\ludwi\source\repos\Virusepidimin\obj\Debug\netcoreapp3.1\Virusepidimin.pdb
+C:\Users\ludwi\source\repos\Virusepidimin\obj\Debug\netcoreapp3.1\Virusepidimin.genruntimeconfig.cache
+C:\Users\ludwi\source\repos\Virusepidimin\obj\Debug\netcoreapp3.1\Virusepidimin.csprojAssemblyReference.cache

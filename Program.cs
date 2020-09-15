@@ -13,9 +13,6 @@ namespace Virusepidimin
             int people = 50;
             int hoursInfected = 5;
             StartEpidemic(people, hoursInfected);
-            
-            
-
         }
 
         private static void StartEpidemic(int amount, int hoursInfected)
@@ -46,7 +43,6 @@ namespace Virusepidimin
 
                 infectPeople(infected);
             }
-
         }
 
         private static void infectPeople(int infected)
